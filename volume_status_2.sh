@@ -25,4 +25,4 @@ else
 fi
 
 # Optional: force redraw on click
-pkill -RTMIN+10 i3blocks
+# pkill -RTMIN+10 i3blocks
