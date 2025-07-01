@@ -214,7 +214,7 @@ bindsym $mod+Shift+Return exec google-chrome
 
 # For floating terminal
 # Match floating terminals by class and set them to float with size and position
-for_window [class="floating_window"] floating enable, resize set 500 400, move position center
+for_window [class="floating_window"] floating enable, resize set 500 400, move position 1409 640
 bindsym $mod+Mod1+Return exec --no-startup-id gnome-terminal --class=floating_window
 
 for_window [class="floating_window_mid"] floating enable, resize set 800 600, move position center
