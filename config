@@ -15,6 +15,19 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 
+# Set default inner/outer gaps
+gaps inner 2
+gaps outer 0
+smart_gaps on
+
+# Increase/decrease inner gap
+bindsym $mod+Ctrl+Up    gaps inner current plus 1
+bindsym $mod+Ctrl+Down  gaps inner current minus 1
+
+# Increase/decrease outer gap
+bindsym $mod+Ctrl+Right gaps outer current plus 1
+bindsym $mod+Ctrl+Left  gaps outer current minus 12
+
 # Wallpaper setting
 # exec_always --no-startup-id bash -c 'sleep 0.5 && feh --bg-fill /home/shahbaz/Pictures/nasa-Q1p7bh3SHj8-unsplash.jpg'
 exec_always --no-startup-id nitrogen --restore
